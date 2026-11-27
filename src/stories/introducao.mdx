@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Introdução" />
+
+# Design system
+
+Componentes do [shadcn/ui](https://ui.shadcn.com) com o tema neutro padrão, sem marca.
+Use como base para construir suas telas e ajuste à vontade.
+
+## Onde estão as coisas
+
+- `src/index.css`: tokens (cores, raio, fonte). Mude aqui para mudar todos os componentes.
+- `src/components/ui/`: componentes do shadcn. Pode editar.
+- `src/stories/`: as páginas deste Storybook.
+- `src/screens/`: suas telas. Rode `pnpm dev` para vê-las.
+
+## Regras simples
+
+- Use as cores semânticas (`bg-primary`, `text-muted-foreground`, `border-border`) em vez de cores soltas.
+  Assim o tema claro e o escuro funcionam sem esforço.
+- Prefira um componente existente antes de criar um novo.
+- Precisa de um componente que não está aqui? Veja a lista completa em
+  [ui.shadcn.com/docs/components](https://ui.shadcn.com/docs/components) e rode
+  `pnpm dlx shadcn@latest add <nome>`.
+
+Use o botão **Tema** na barra do topo para ver tudo no modo escuro.
